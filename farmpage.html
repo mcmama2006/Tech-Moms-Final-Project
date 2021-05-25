@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>FarmMcIntosh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="farmstyles.css">
+
+
+
+<body>
+
+    <header class='nav'>
+        <div><a href='practice.html'>Home</a></div>
+        <div><a href='farawaypage.html'>Faraway</a></div>
+    </header>
+
+
+    <div class="title">
+        Fotos from the Farm
+    </div>
+
+    <div class="slideshow">
+        <figure>
+            <img class="mySlides" src="1swingview.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="2outhouse.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="3chickhand.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="3jim.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="4easterchicks.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="5easterchick.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="6littleturkey.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="7littlegoose.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="8ducks.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="9littledoby.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="10bigduck.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="11bigdoby.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="12bigturkey.jpg" style="height:100%">
+        </figure>
+
+        <figure>
+            <img class="mySlides" src="25dwight.jpg" style="height:100%">
+            <figcaption>Dwight</figcaption>
+        </figure>
+
+
+
+        <button class="button" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <footer class='footer'>
+        <p>- Web Design and Images by Melissa McIntosh - Powered by Tech-Moms Spring Cohort 2021-</p>
+    </footer>
+
+</body>
+
+</html>
